@@ -49,17 +49,30 @@
                 </div>
                 <button id="cadastrar">Cadastrar</button>
                <button id="voltar">Voltar</button>
-            </form method="get">
+            </form>
 
 
         </div>
     </div>
 </div>
-<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="../node_modules/jquery/dist/jquery.js"></script>
 <script>
-    $('#cadastro').click(function(e){
+    function cadastrar(){
+        $('.container-login').hide(200)
+        $('.container-cadastro').show(200)
+    }
+    function voltar(){
+        $('.container-login').show(200)
+        $('.container-cadastro').hide(200)
+    }
+   
+    $('#cadastro').on("click",function(e){
     e.preventDefault();
-    $('#conteiner-login').css("display","none")
+   cadastrar()
+    })
+    $('#voltar').on("click",function(e){
+    e.preventDefault();
+   voltar()
     })
  
 </script>
