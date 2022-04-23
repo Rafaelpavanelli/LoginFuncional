@@ -78,7 +78,7 @@ form input:focus + label, input:valid ~ label{
     font-size:13px;
 
 }
-form input[type="submit"]{
+button{
     padding: 4px 20px;
     border: none;
     outline: none;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../node_modules/jquery/dist/jquery.js">
+    
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
     <link href="fontawesome/css/all.css" rel="stylesheet">
@@ -29,8 +29,8 @@
                     </a>
                 </div>
             </div>
-            <input id="cadastro" type="submit" value="Cadastrar-se">
-            <input id="login" type="submit" value="Login">
+            <button id="cadastro">Fazer Cadastro</button>
+           <button id="login">Login</button>
         </form method="get">
     </div>
 
@@ -47,21 +47,21 @@
                     <input type="password" id="senha" required placeholder="Senha" />
                     <input type="password" id="Confirmar-senha" required placeholder="Confirmar senha" />
                 </div>
-                <input id="cadastrar" type="submit" value="Cadastrar">
-                <input id="voltar" type="submit" value="Voltar">
+                <button id="cadastrar">Cadastrar</button>
+               <button id="voltar">Voltar</button>
             </form method="get">
 
 
         </div>
     </div>
 </div>
-
+<script src="node_modules/jquery/dist/jquery.js"></script>
 <script>
-    $('#cadastro').on("click",(e)=>{
+    $('#cadastro').click(function(e){
     e.preventDefault();
     $('#conteiner-login').css("display","none")
-    }
- )
+    })
+ 
 </script>
 </body>
 
