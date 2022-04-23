@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/jquery/dist/jquery.js">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+</head>
+
+<body id="flex">
+    <div class="container-login" >
+        <div class="user"></div>
+        <form>
+            <h1>log in</h1>
+            <div class="input">
+                <input type="text"  />
+                <label> user</label>
+            </div>
+            <div class="input box">
+                <input type="password" />
+                <label>password</label>
+                <div class="forgot">
+                    <a href="#">
+                        Recuperar Senha
+                    </a>
+                </div>
+            </div>
+            <input id="cadastro" type="submit" value="Cadastrar-se">
+            <input id="login" type="submit" value="Login">
+        </form method="get">
+    </div>
+
+    <!-- cadastro -->
+    
+    <div id="cadastro">
+        <div class="container-cadastro">
+            <form>
+                <h1>Cadastro</h1>
+                <div class="input">
+                    <input type="text" id="nome" required placeholder="Nome Completo" />
+                    <input type="text" id="usuario" required placeholder="Usuario" />
+                    <input type="email" required placeholder="email"/>
+                    <input type="password" id="senha" required placeholder="Senha" />
+                    <input type="password" id="Confirmar-senha" required placeholder="Confirmar senha" />
+                </div>
+                <input id="cadastrar" type="submit" value="Cadastrar">
+                <input id="voltar" type="submit" value="Voltar">
+            </form method="get">
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#cadastro').on("click",(e)=>{
+    e.preventDefault();
+    $('#conteiner-login').css("display","none")
+    }
+ )
+</script>
+</body>
+
+</html>
